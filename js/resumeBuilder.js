@@ -192,5 +192,17 @@ var projects = {
 
 projects.display();
 
-
 $("#mapDiv").append(googleMap);
+
+var displayFooter = function () {
+	var formattedmobile = HTMLmobile.replace("%data%",bio.contacts.mobile);
+	var formattedemail = HTMLemail.replace("%data%",bio.contacts.email);
+	var formattedgithub = HTMLgithub.replace("%data%",bio.contacts.github);
+	var formattedlocation = HTMLlocation.replace("%data%",bio.contacts.location);
+	$("#footerContacts").append(formattedmobile);
+	$("#footerContacts").append(formattedemail);
+	$("#footerContacts").append(formattedgithub);
+	$("#footerContacts").append(formattedlocation);
+}
+
+displayFooter();
