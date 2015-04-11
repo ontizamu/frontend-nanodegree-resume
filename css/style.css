@@ -15,7 +15,7 @@
 
 h1 {
   font-size: 40px;
-  color: #F5A623;
+  color: #FF6342;
   line-height: 48px;
   display: inline;
 }
@@ -31,7 +31,7 @@ h2 {
 h3 {
   font-style: italic;
   font-size: 20px;
-  color: #000000;
+  color: #999;
   line-height: 22px;
 }
 
@@ -87,16 +87,16 @@ a {
 }
 
 #skillsH3 {
-  color: #F5AE23;
+  color: #FF6342;
   display: none;
 }
 
-.orange {
-  background-color: #F5AE23;
+.red {
+  background-color: #FF6342;
 }
 
-.orange-text {
-  color: #F5AE23;
+.red-text {
+  color: #FF6342;
 }
 
 .white-text {
@@ -144,6 +144,11 @@ ul {
   padding: 10px;
   width: 200px;
   display: none;
+}
+
+.projectImg {
+  width: 476px;
+  height: 300px;
 }
 
 img {
@@ -207,9 +212,20 @@ span {
   padding-bottom: 5%;
 }
 
+/*@media only screen and (min-width: 550px) {
+  .projectImg {
+    display: block;
+  }
+}*/
+
 @media only screen and (min-width: 750px) {
   #skillsH3,
   .biopic {
     display: block;
   }
 }
+
+
+
+
+
