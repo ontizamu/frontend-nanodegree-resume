@@ -10,7 +10,7 @@ var bio = {
 			"github" : "ontizamu",
 			"location" : "Chandler, AZ"
 	},
-	"welcomeMsg" : "Welcome to my resume page!",
+	"welcomeMsg" : "Welcome to my resume page !",
 	"skills" : ["SQL","Reporting Tools","Data Analysis"],	
 	"bioPic" : "images/Picture.jpg",
 	display : function() {
@@ -65,21 +65,21 @@ var education = {
 	"onlinecourses" : [
 		{
 			"title" : "Introduction to HTML and CSS",
-			"school" : "Udacity.com",
+			"school" : "Udacity",
 			"date" : 2015,
-			"url" : "http://www.udacity.com"
+			"url" : "http://www.udacity.com/course/ud304"
 		},
 		{
 			"title" : "Responsive Web Design Fundamentals",
-			"school" : "Udacity.com",
+			"school" : "Udacity",
 			"date" : 2015,
-			"url" : "http://www.udacity.com"
+			"url" : "http://www.udacity.com/course/ud893"
 		},
 		{
 			"title" : "Version Control with Git and Github",
-			"school" : "Udacity.com",
+			"school" : "Udacity",
 			"date" : 2015,
-			"url" : "http://www.udacity.com"
+			"url" : "http://www.udacity.com/course/ud775"
 		}	
 	],
 	display : function(){
@@ -158,14 +158,14 @@ work.display();
 var projects = {
 	"projects" : [
 		{	
-			"Title" : "TEA",
+			"Title" : "Training Evaluation Assessment (TEA)",
 			"Dates" : "6/12-3/15",
-			"Description" : "System to administer, evaluate and asses training",
-			"Images" : []
+			"Description" : "System to administer, evaluate and assess training",
+			"Images" : ["images/TEA.jpg"]
 		},
 		{
 			"Title" : "Mockup to Website",
-			"Dates" : "2/26/15-3/4/15",
+			"Dates" : "2/15-3/15",
 			"Description" : "Design a website from a mockup",
 			"Images" : []
 		}
@@ -206,3 +206,5 @@ var displayFooter = function () {
 }
 
 displayFooter();
+
+
