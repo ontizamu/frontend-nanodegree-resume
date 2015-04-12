@@ -212,18 +212,22 @@ span {
   padding-bottom: 5%;
 }
 
-/*@media only screen and (min-width: 550px) {
-  .projectImg {
-    display: block;
-  }
-}*/
-
 @media only screen and (min-width: 750px) {
   #skillsH3,
   .biopic {
     display: block;
   }
 }
+
+/* Project image dissapear when the screen width 
+   is less than 550px */
+
+@media only screen and (max-width: 550px) {
+  .projectImg {
+    display: none;
+  }
+}
+
 
 
 
