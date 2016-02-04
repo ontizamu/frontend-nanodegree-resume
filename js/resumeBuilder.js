@@ -10,9 +10,9 @@ var bio = {
 			"github" : "ontizamu",
 			"location" : "Chandler, AZ"
 	},
-	"welcomeMsg" : "Welcome to my resume page !",
-	"skills" : ["SQL","Reporting Tools","Data Analysis"],	
-	"bioPic" : "images/Picture.jpg",
+	"welcomeMsg" : " ",
+	"skills" : ["HTML","CSS","JavaScript","Github","SQL","Relational Databases","Reporting Tools"],	
+	"bioPic" : "images/MEOZs.jpg",
 	display : function() {
 		var formattedName = HTMLheaderName.replace("%data%",bio.name);
 		var formattedRole = HTMLheaderRole.replace("%data%",bio.role);
@@ -46,6 +46,14 @@ bio.display();
 var education = {
 	"schools":[
 		{
+			"name": "Udacity.com",
+			"location": " ",
+			"degree": "Front-End Web Developer Nanodegree",
+			"major": " ",
+			"dates": 2015,
+			"url": "http://www.udacity.com"
+		},
+		{
 			"name" : "Western International University (WIU)",
 			"location" : "Phoenix, AZ, US",
 			"degree": "Masters",
@@ -55,7 +63,7 @@ var education = {
 		},
 		{
 			"name" : "Instituto Tecnologico Autonomo de Mexico (ITAM)",
-			"location" : "Mexico City, MX",
+			"location" : "Mexico City, Mexico",
 			"degree" : "BS",
 			"major" : "Computer Science",
 			"dates" : 1995,
@@ -67,20 +75,74 @@ var education = {
 			"title" : "Introduction to HTML and CSS",
 			"school" : "Udacity",
 			"date" : 2015,
-			"url" : "http://www.udacity.com/course/ud304"
+			"url" : "http://www.udacity.com/course/intro-to-html-and-css--ud304"
 		},
 		{
 			"title" : "Responsive Web Design Fundamentals",
 			"school" : "Udacity",
 			"date" : 2015,
-			"url" : "http://www.udacity.com/course/ud893"
+			"url" : "http://www.udacity.com/course/responsive-web-design-fundamentals--ud893"
+		},
+		{
+			"title" : "JavaScript Basics",
+			"school" : "Udacity",
+			"date" : 2015,
+			"url" : "http://www.udacity.com/course/javascript-basics--ud804"
+		},
+		{
+			"title" : "Intro to jQuery",
+			"school" : "Udacity",
+			"date" : 2015,
+			"url" : "http://www.udacity.com/course/intro-to-jquery--ud245"
+		},
+		{
+			"title" : "Object-Oriented JavaScript",
+			"school" : "Udacity",
+			"date" : 2015,
+			"url" : "http://www.udacity.com/course/object-oriented-javascript--ud015"
+		},
+		{
+			"title" : "HTML5 Canvas",
+			"school" : "Udacity",
+			"date" : 2015,
+			"url" : "http://www.udacity.com/course/html5-canvas--ud292"
+		},
+		{
+			"title" : "Website Performance Optimization",
+			"school" : "Udacity",
+			"date" : 2015,
+			"url" : "http://www.udacity.com/course/website-performance-optimization--ud884"
+		},
+		{
+			"title" : "Browser Rendering Optimization",
+			"school" : "Udacity",
+			"date" : 2015,
+			"url" : "http://www.udacity.com/course/browser-rendering-optimization--ud860"
+		},
+		{
+			"title" : "Intro to AJAX",
+			"school" : "Udacity",
+			"date" : 2015,
+			"url" : "http://www.udacity.com/course/intro-to-ajax--ud110"
+		},
+		{
+			"title" : "JavaScript Design Patterns",
+			"school" : "Udacity",
+			"date" : 2015,
+			"url" : "http://www.udacity.com/course/javascript-design-patterns--ud989"
+		},
+		{
+			"title" : "JavaScript Testing",
+			"school" : "Udacity",
+			"date" : 2015,
+			"url" : "http://www.udacity.com/course/javascript-testing--ud549"
 		},
 		{
 			"title" : "Version Control with Git and Github",
 			"school" : "Udacity",
 			"date" : 2015,
 			"url" : "http://www.udacity.com/course/ud775"
-		}	
+		}
 	],
 	display : function(){
 		for (school in education.schools) {
@@ -116,23 +178,30 @@ education.display();
 var work = {
 	"jobs" : [
 		{
+			"Employer" : "U.S. Census Bureau",
+			"Title" : "Crew Leader",
+			"location": "Chandler, AZ",
+			"Dates" : "2015",
+			"Description" : "Train and manage a team of seven enumerators during the Special Census for the City of Chandler" 
+		},
+		{
 			"Employer" : "Wycliffe Associates",
 			"Title" : "Report Developer",
-			"Location" : "Chandler, AZ",
-			"Dates" : "2012-present",
-			"Description" : "Participating in the development of an application for training administration. Reponsible for creating reports using SQL and SSRS"
+			"location" : "Chandler, AZ",
+			"Dates" : "2012-2015",
+			"Description" : "Participating in the development of an application for training administration. Responsible for creating reports using SQL and SSRS"
 		},
 		{
 			"Employer" : "Arizona State University",
 			"Title" : "Research Assistant",
-			"Location" : "Tempe, AZ",
-			"Dates" : "2007-2011",
-			"Description" : "Interviewed participants to collect research data, performed data entry, data cleaning and descriptive statistical analysis"
+			"location" : "Tempe, AZ",
+			"Dates" : "2007-2012",
+			"Description" : "Interviewed participants to collect research data. Performed data entry, data cleaning and descriptive statistical analysis"
 		},
 		{
 			"Employer" : "Schaller Anderson",
 			"Title" : "Systems Analyst",
-			"Location" : "Phoenix, AZ",
+			"location" : "Phoenix, AZ",
 			"Dates" : "2003",
 			"Description" : "Interviewed users to define report specifications. Defined, coded, tested and debugged reports using SQL Server stored procedures and Crystal Reports"
 		}
@@ -142,7 +211,7 @@ var work = {
 			$("#workExperience").append(HTMLworkStart);
 			var formattedEmployer = HTMLworkEmployer.replace("%data%",work.jobs[job].Employer);
 			var formattedTitle = HTMLworkTitle.replace("%data%",work.jobs[job].Title);
-			var formattedLocation = HTMLworkLocation.replace("%data%",work.jobs[job].Location);
+			var formattedLocation = HTMLworkLocation.replace("%data%",work.jobs[job].location);
 			var formattedDates = HTMLworkDates.replace("%data%",work.jobs[job].Dates);
 			var formattedDescription = HTMLworkDescription.replace("%data%",work.jobs[job].Description);
     		$(".work-entry:last").append(formattedEmployer + formattedTitle);
@@ -161,14 +230,27 @@ var projects = {
 			"Title" : "Training Evaluation Assessment (TEA)",
 			"Dates" : "6/12-3/15",
 			"Description" : "System to administer, evaluate and assess training",
-			"Images" : ["images/TEA.jpg"]
+			"Images" : []
 		},
 		{
-			"Title" : "Mockup to Website",
-			"Dates" : "2/15-3/15",
-			"Description" : "Design a website from a mockup",
-			"Images" : []
+			"Title" : "Classic Arcade Game Clone",
+			"Dates" : "2015",
+			"Description" : "An HTML5 Canvas Powered Video Game, developed using the best practices in Object Oriented JavaScript",
+			"Images" : ["images/p3.jpg"]
+		},
+		{
+			"Title" : "Neighborhood Map",
+			"Dates" : "2015",
+			"Description" : "A single web page application, built using Knockout, that displays a Google map of Chandler, AZ and some points of interest. When the user click on a place additional information is presented from the FourSquare API",
+			"Images" : ["images/p5.jpg"]
+		},
+		{
+			"Title" : "Feed Reader Testing",
+			"Dates" : "2015",
+			"Description" : "Wrote comprehensive unit tests, using the Jasmine testing framework, for an RSS Feed Reader application that uses Google's RSS API",
+			"Images" : ["images/p6.jpg"]
 		}
+
 	],
 	display : function() {
 		for (project in projects.projects)
